@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADTset-SLLA", "ADTset-SLLA\ADTset-SLLA.vcxproj", "{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Debug|x64.ActiveCfg = Debug|x64
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Debug|x64.Build.0 = Debug|x64
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Debug|x86.Build.0 = Debug|Win32
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Release|x64.ActiveCfg = Release|x64
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Release|x64.Build.0 = Release|x64
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Release|x86.ActiveCfg = Release|Win32
+		{CCF947CA-E6ED-4BC9-9CAA-6AFB53A2F3FD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B45C7D14-2907-46D0-96A4-8B3371084581}
+	EndGlobalSection
+EndGlobal
