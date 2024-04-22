@@ -1,17 +1,22 @@
 #pragma once
-//DO NOT INCLUDE SETITERATOR
 
-//DO NOT CHANGE THIS PART
 #define NULL_TELEM -111111
 typedef int TElem;
 class SetIterator;
 
 class Set {
-	//DO NOT CHANGE THIS PART
 	friend class SetIterator;
 
     private:
-		//TODO - Representation
+        int cp; // maximum capacity
+        int n; // actual size of array
+        TElem* e; // dynamic array of TElem elements
+        int* link; // dynamic array for the links between elements
+        int head; // index of the first element of the list
+        int tail; // index of the last element of the list
+        int firstEmpty; // index of first free space of the array
+
+        void resize(); // resizes the dynamic arrays
 
     public:
         //implicit constructor
@@ -33,6 +38,8 @@ class Set {
 
         //check whether the set is empty or not;
         bool isEmpty() const;
+
+        void empty();
 
         //return an iterator for the set
         SetIterator iterator() const;

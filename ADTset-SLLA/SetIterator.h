@@ -3,14 +3,13 @@
 
 class SetIterator
 {
-	//DO NOT CHANGE THIS PART
 	friend class Set;
-private:
-	//DO NOT CHANGE THIS PART
-	const Set& set;
-	SetIterator(const Set& s);
 
-	//TODO - Representation
+private:
+	const Set& set;
+	SetIterator(const Set&);
+	
+	int current; // index to the current element
 
 public:
 	void first();

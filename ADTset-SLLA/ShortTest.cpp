@@ -20,8 +20,7 @@ void testAll() {
 	assert(s.remove(1) == true);
 	assert(s.remove(6) == false);
 	assert(s.size() == 4);
-
-
+	
 	SetIterator it = s.iterator();
 	it.first();
 	int sum = 0;
@@ -33,4 +32,3 @@ void testAll() {
 	assert(sum == 19);
 
 }
-

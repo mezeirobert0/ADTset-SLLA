@@ -2,22 +2,15 @@
 #include "SetIterator.h"
 #include "ExtendedTest.h"
 #include "ShortTest.h"
-#include <stack>
 #include <iostream>
+#include <assert.h>
 using namespace std;
 
-
-
-
 int main() {
-
 	testAll();
 	testAllExtended();
 
 	cout << "That's all!" << endl;
+	
 	system("pause");
-
 }
-
-
-

@@ -1,32 +1,37 @@
 #include "SetIterator.h"
 #include "Set.h"
+#include <stdexcept>
 
 
 SetIterator::SetIterator(const Set& m) : set(m)
 {
-	//TODO - Implementation
+	current = set.head;
 }
 
 
 void SetIterator::first() {
-	//TODO - Implementation
+	current = set.head;
 }
 
 
 void SetIterator::next() {
-	//TODO - Implementation
+	if (!valid())
+		throw std::out_of_range("Iterator is out of range");
+
+	current = set.link[current];
 }
 
 
 TElem SetIterator::getCurrent()
 {
-	//TODO - Implementation
-	return NULL_TELEM;
+	if (!valid())
+		throw std::out_of_range("Iterator is out of range");
+
+	return set.e[current];
 }
 
 bool SetIterator::valid() const {
-	//TODO - Implementation
-	return false;
+	return (current != -1);
 }
 
 

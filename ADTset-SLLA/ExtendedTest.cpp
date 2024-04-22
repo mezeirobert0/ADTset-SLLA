@@ -7,7 +7,7 @@
 using namespace std;
 
 void printM(Set& s){
-	SetIterator it = s.iterator();
+SetIterator it = s.iterator();
 	while (it.valid()){
 		std::cout << it.getCurrent() << " ";
 		it.next();
@@ -50,7 +50,6 @@ void testAdd() {
 	for (int i = 0; i < 10; i++) {
 		s.add(i);
 	}
-	//printM(m);
 	assert(s.isEmpty() == false);
 	assert(s.size() == 10);
 	for (int i = -10; i < 20; i++) { //add more elements [-10, 20)
@@ -107,12 +106,14 @@ void testRemove() {
 			assert(m.remove(i) == false);
 		}
 	}
+
 	assert(m.size() == 0);
 	//printM(m);
 
 	for (int i = -100; i <= 100; i = i + 2) { 
 		m.add(i);
 	}
+
 	//printM(m);
 	for (int i = 100; i > -100; i--) { //delete in descending order (reverse order compared to the adding)
 		if (i % 2 == 0) {
@@ -295,6 +296,25 @@ void testQuantity() {//add lots of elements
 }
 
 
+void testEmpty() {
+	cout << "Test empty" << endl;
+	Set s;
+	assert(s.size() == 0);
+	s.empty();
+	assert(s.size() == 0);
+	for (int i = -10000; i < 10000; i = i + 2) {
+		s.add(i);
+	}
+	assert(s.size() == 10000);
+	s.empty();
+	assert(s.size() == 0);
+	for (int i = -10000; i < 10000; i++) {
+		assert(s.search(i) == false);
+	}
+	assert(s.size() == 0);
+}
+
+
 // we don't know how the set is represented and in which order the elements are stored or printed, we can only test general thing
 void testAllExtended() {
 	testCreate();
@@ -303,9 +323,5 @@ void testAllExtended() {
 	testIterator();
 	testMix();
 	testQuantity();
-
+	testEmpty();
 }
-
-
-
-
